@@ -1,0 +1,32 @@
+/* ------------------------------------- */
+/* ?Basic style? */
+/* ------------------------------------- */
+
+.container {
+    width: 70%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+h1 {
+    margin: 20px auto;
+    padding: 10px 10px;
+    border: 2px solid rgb(255, 68, 68);
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+h1:hover {
+    background-color: rgb(255, 68, 68);
+}
+
+li {
+    cursor: pointer;
+}
+
+/* ------------------------------------- */
+/* ?Header? */
+/* ------------------------------------- */
+
+.header {}
+
