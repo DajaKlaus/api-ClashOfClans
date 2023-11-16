@@ -5,6 +5,10 @@ import { Component } from '@angular/core';
   templateUrl: './player.component.html',
   styleUrls: ['./player.component.css']
 })
-export class PlayerComponent {
 
+export class PlayerComponent {
+    
+    submit(playerTag: HTMLInputElement) {
+
+    }
 }

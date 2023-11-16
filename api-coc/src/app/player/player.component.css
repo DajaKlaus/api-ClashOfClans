@@ -1,0 +1,11 @@
+/* ------------------------------------- */
+/* ?Search bar? */
+/* ------------------------------------- */
+
+.search-bar {
+    padding: 10px;
+    border: 1px solid ;
+    border-radius: 5px;
+    outline: none;
+    width: 200px;
+}

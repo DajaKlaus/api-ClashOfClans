@@ -3,30 +3,57 @@
 /* ------------------------------------- */
 
 .container {
-    width: 70%;
-    margin: 10px auto;
+    width: 80%;
+    margin: 0 auto;
     text-align: center;
 }
 
 h1 {
-    margin: 20px auto;
     padding: 10px 10px;
-    border: 2px solid rgb(255, 68, 68);
-    border-radius: 20px;
-    transition: 0.2s;
-}
-
-h1:hover {
-    background-color: rgb(255, 68, 68);
 }
 
 li {
+    position: relative;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 /* ------------------------------------- */
 /* ?Header? */
 /* ------------------------------------- */
 
-.header {}
+.title {
+    background-color: rgba(255, 68, 68);
+}
 
+.category-list {
+    display: flex;
+    list-style: none;
+}
+
+.category-list li {
+    font-size: 30px;
+    width: 40%;
+    margin: 20px auto;
+    padding: 10px;
+    border: 2px solid rgba(255, 68, 68, 0.708);
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.category-list li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(255, 68, 68, 0.708);
+    overflow: hidden;
+    transition: width 0.5s ease-in-out;
+    z-index: -1;
+}
+
+.category-list li:hover::before {
+    width: 100%;
+}
